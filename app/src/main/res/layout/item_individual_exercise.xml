@@ -1,0 +1,148 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/exercise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Dumbbell biceps curl"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/bg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/difficulty_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:drawableLeft="@drawable/ic_gauge"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/bg"
+                app:layout_constraintTop_toBottomOf="@+id/exercise_name" />
+
+            <TextView
+                android:id="@+id/required_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_equipment"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/bg"
+                app:layout_constraintTop_toBottomOf="@+id/difficulty_level" />
+
+            <TextView
+                android:id="@+id/muscles_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="5dp"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Muscles: "
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/bg"
+                app:layout_constraintTop_toBottomOf="@+id/required_equipment"
+                app:drawableLeftCompat="@drawable/icon_muscle" />
+
+            <TextView
+                android:id="@+id/primary_muscles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:text="TextView"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muscles_tv" />
+
+            <TextView
+                android:id="@+id/secondary_muscles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="TextView"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/bg"
+                app:layout_constraintTop_toBottomOf="@+id/primary_muscles" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/exercise_image"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_exercise_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_three" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
