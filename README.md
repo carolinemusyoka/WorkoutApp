@@ -18,9 +18,9 @@ I used Android Studio Bumblebee (2021.1.1). In case of any issues, do let me kno
     * [Coroutine](https://developer.android.com/kotlin/coroutines)
 
 ## Tests
-To run HomeFragmentTest run ` ./gradlew app:connectedAndroidTest -P android.testInstrumentationRunnerArguments.class=com.carolmusyoka.virtuagymtest.HomeFragmentTest`
-To run DetailScreenTest run ` ./gradlew app:connectedAndroidTest -P android.testInstrumentationRunnerArguments.class=com.carolmusyoka.virtuagymtest.ExerciseDetailTest`
-To run RoomDbTest run ` ./gradlew app:connectedAndroidTest -P android.testInstrumentationRunnerArguments.class=com.carolmusyoka.virtuagymtest.RoomDBTest`
+To run HomeFragmentTest run ` ./gradlew app:connectedAndroidTest -P android.testInstrumentationRunnerArguments.class=com.carolmusyoka.workoutapp.HomeFragmentTest`
+To run DetailScreenTest run ` ./gradlew app:connectedAndroidTest -P android.testInstrumentationRunnerArguments.class=com.carolmusyoka.workoutapp.ExerciseDetailTest`
+To run RoomDbTest run ` ./gradlew app:connectedAndroidTest -P android.testInstrumentationRunnerArguments.class=com.carolmusyoka.workoutapp.RoomDBTest`
 
 ## Run the app
 
